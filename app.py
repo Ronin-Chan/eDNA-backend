@@ -24,5 +24,9 @@ if __name__ == "__main__":
     @app.route('/')
     def home():
         return {"message": "Welcome to the EDNA Web App"}
+    
+    @app.route('/health', methods=['GET'])
+    def health():     
+        return {"status": "healthy"}, 200
 
     # app.run(debug=True)

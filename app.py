@@ -29,4 +29,4 @@ if __name__ == "__main__":
     def health():     
         return {"status": "healthy"}, 200
 
-    # app.run(debug=True)
+    app.run(host='0.0.0.0', debug=False)

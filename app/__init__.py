@@ -30,8 +30,5 @@ def create_app():
     @app.route('/health', methods=['GET'])
     def health():
         return {"status": "healthy"}, 200
-    
-    if __name__ == "__main__":
-        app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
 
     return app
